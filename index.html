@@ -24,7 +24,10 @@ body{margin:0;background:#eef3f8;font-family:Segoe UI,Arial,sans-serif}
 .navbar-nav .nav-link{color:#FFC107!important;font-weight:700;margin-left:15px}
 .navbar-nav .nav-link:hover{color:#fff!important}
 .navbar-nav .nav-link.active{border-bottom:3px solid #FFC107}
-.hero{background:linear-gradient(135deg,#08111f,#0b3d91);color:#fff;padding:90px 0;text-align:center}
+.hero{position:relative;overflow:hidden;color:#fff;padding:120px 0;text-align:center;min-height:700px;display:flex;align-items:center;justify-content:center}
+.hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::before{content:'';position:absolute;inset:0;background:rgba(8,17,31,.55);z-index:1}
+.hero .container{position:relative;z-index:2}
 .card{border:none;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.15);transition:.3s}
 .card:hover{transform:translateY(-8px)}
 .whatsapp-float{position:fixed;right:20px;bottom:20px;width:65px;height:65px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;text-decoration:none;box-shadow:0 8px 25px rgba(0,0,0,.35);z-index:9999}
@@ -35,7 +38,7 @@ footer{background:#08111f;color:#fff}
 <nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="index.html">
-<img alt="HexaTech" class="me-2" height="70" src="assets/images/logohexatech.png"/>
+<img alt="HexaTech" class="me-2" height="140" src="assets/images/logohexatech.png"/>
 <strong>HexaTech</strong>
 </a>
 <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
@@ -45,9 +48,12 @@ footer{background:#08111f;color:#fff}
 </div>
 </nav>
 <section class="hero">
+<video autoplay muted loop playsinline class="hero-video">
+<source src="assets/images/monpc.mp4" type="video/mp4">
+</video>
 <div class="container">
-<img alt="Logo" src="assets/images/logohexatech.png" style="max-height:220px"/>
-<h1 class="display-3 fw-bold mt-3">HexaTech</h1>
+<img alt="Logo" src="assets/images/logohexatech.png" style="max-height:380px"/>
+<h1 class="display-1 fw-bold mt-3">HexaTech</h1>
 <p class="lead">Votre spécialiste informatique à Montauban</p>
 <p>Réparation informatique • Nos configurations • PC reconditionnés</p>
 <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
