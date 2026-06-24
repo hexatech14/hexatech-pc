@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact - HexaTech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HexaTech - Contact</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -11,62 +11,88 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
-<a class="navbar-brand" href="index.html"><img src="assets/images/logohexatech.png" alt="HexaTech"></a>
-<div class="navbar-nav ms-auto">
-<a class="nav-link" href="index.html">Accueil</a>
-<a class="nav-link" href="services.html">Services</a>
-<a class="nav-link" href="reconditionnes.html">PC reconditionnés</a>
-<a class="nav-link" href="tarifs.html">Tarifs</a>
-<a class="nav-link active" href="contact.html">Contact</a>
-</div>
-</div>
-</nav>
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+<img src="assets/images/logohexatech.png" height="70" class="me-2">
+<strong>HexaTech</strong>
+</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="montagepc.html">Montage PC</a></li>
+<li class="nav-item"><a class="nav-link" href="reconditionnes.html">PC reconditionnés</a></li>
+<li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+</ul>
+</div></div></nav>
 
-<header class="hero text-center">
-<div class="container">
+<header class="bg-dark text-white py-5">
+<div class="container text-center">
 <h1>Contactez HexaTech</h1>
-<p class="lead">Décrivez votre problème et je vous rappelle rapidement.</p>
+<p class="lead">Une question ? Un devis ? Contactez-nous.</p>
 </div>
 </header>
 
-<div class="container py-5">
+<main class="container py-5">
+<div class="row g-4">
 
-<form action="https://formspree.io/f/xbdvdjkg" method="POST" class="card p-4 shadow mb-5">
-<h3 class="mb-3">Demande d'intervention</h3>
+<div class="col-lg-6">
+<div class="card shadow">
+<div class="card-body">
+<h2>Formulaire de contact</h2>
 
-<input class="form-control mb-3" name="Nom" placeholder="Nom et prénom" required>
-<input class="form-control mb-3" type="tel" name="Téléphone" placeholder="Téléphone" required>
-<input class="form-control mb-3" type="email" name="Email" placeholder="Adresse e-mail" required>
-<input class="form-control mb-3" name="Marque" placeholder="Marque du PC">
-<input class="form-control mb-3" name="Modele" placeholder="Modèle du PC">
+<form action="https://formspree.io/f/xbdvdjkg" method="POST">
+<div class="mb-3">
+<label class="form-label">Nom</label>
+<input type="text" name="Nom" class="form-control" required>
+</div>
 
-<select class="form-select mb-3" name="Probleme">
-<option>Ordinateur lent</option>
-<option>Windows ne démarre plus</option>
-<option>Virus</option>
-<option>Changement SSD</option>
-<option>Montage PC</option>
-<option>PC reconditionné</option>
-<option>Autre</option>
-</select>
+<div class="mb-3">
+<label class="form-label">E-mail</label>
+<input type="email" name="Email" class="form-control" required>
+</div>
 
-<textarea class="form-control mb-3" rows="5" name="Message" placeholder="Décrivez votre problème..." required></textarea>
+<div class="mb-3">
+<label class="form-label">Téléphone</label>
+<input type="tel" name="Telephone" class="form-control">
+</div>
 
-<button class="btn btn-warning btn-lg">📨 Envoyer ma demande</button>
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea name="Message" rows="6" class="form-control" required></textarea>
+</div>
+
+<button class="btn btn-primary btn-lg w-100" type="submit">Envoyer le message</button>
 </form>
 
-<h2 class="text-center mb-4">📍 Retrouvez HexaTech sur Google Maps</h2>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.0725627625225!2d1.315107677319867!3d44.16436391921918!2m3!1f0!2f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac737f0252ef87%3A0xb70616b73937c489!2sHexaTech%20R%C3%A9paration%20PC!5e0!3m2!1sfr!2sfr!4v1782276460572!5m2!1sfr!2sfr" width="100%" height="350" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-<div class="text-center mt-4">
-<a class="btn btn-primary btn-lg" target="_blank" href="https://maps.app.goo.gl/gNBVdQLJGRbz9KJCA">🗺️ Ouvrir dans Google Maps</a>
+<div class="d-grid gap-2 mt-4">
+<a href="tel:+33625370973" class="btn btn-danger">📞 Appeler : 06 25 37 09 73</a>
+<a href="https://wa.me/33625370973?text=Bonjour,%20je%20vous%20contacte%20via%20le%20site%20HexaTech." target="_blank" class="btn btn-success">💬 WhatsApp</a>
 </div>
 
 </div>
+</div>
+</div>
 
-<footer class="text-center py-4">© 2026 HexaTech - Réparation informatique</footer>
+<div class="col-lg-6">
+<div class="card shadow">
+<div class="card-body">
+<h2>Nous trouver</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.0725627625225!2d1.315107677319867!3d44.16436391921918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac737f0252ef87%3A0xb70616b73937c489!2sHexaTech%20R%C3%A9paration%20PC!5e0!3m2!1sfr!2sfr!4v1782285708348!5m2!1sfr!2sfr"
+width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+© 2026 HexaTech - Tous droits réservés.
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
