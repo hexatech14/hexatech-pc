@@ -3,25 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HexaTech - Configuration HexaStart</title>
+<title>HexaTech - HexaStart</title>
+<meta name="description" content="Configuration HexaStart par HexaTech.">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1KF707SVWW"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-1KF707SVWW');
+</script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+body{background:#eef3f8;font-family:Segoe UI,Arial,sans-serif}
+.navbar{background:#08111f!important}
+.navbar-brand,.navbar-brand strong,.nav-link{color:#FFC107!important;font-weight:700}
+.nav-link:hover{color:#fff!important}
+.nav-link.active{border-bottom:3px solid #FFC107}
+.hero{background:linear-gradient(135deg,#08111f,#0b3d91);color:#fff;padding:70px 0;text-align:center}
+.card{border:none;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.price{background:#0d6efd;color:#fff;font-size:2rem;font-weight:800;padding:12px;border-radius:18px 18px 0 0}
+.table td:first-child{font-weight:700}
+.float{position:fixed;right:20px;bottom:20px;width:64px;height:64px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:34px;text-decoration:none}
+footer{background:#08111f;color:#fff}
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+<nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="index.html">
-<img src="assets/images/logohexatech.png" height="70" class="me-2" alt="HexaTech">
+<img src="assets/images/logohexatech.png" height="65" class="me-2" alt="HexaTech">
 <strong>HexaTech</strong>
 </a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#m"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="m">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -34,107 +53,66 @@
 </div>
 </nav>
 
-<header class="bg-dark text-white py-5">
-<div class="container text-center">
-<h1 class="display-4 fw-bold">HexaStart</h1>
-<p class="lead">Une configuration gaming performante, évolutive et prête à jouer.</p>
+<section class="hero">
+<div class="container">
+<h1 class="display-3 fw-bold">HexaStart</h1>
+<p>Une configuration performante, évolutive et prête à jouer.</p>
 </div>
-</header>
+</section>
 
-<main class="container py-5">
-
+<div class="container py-5">
 <div class="row g-4">
 
 <div class="col-lg-6">
-<div class="card shadow h-100">
-<div class="card-body text-center">
-<h3>Votre configuration</h3>
-<p>Ajoutez votre photo :</p>
-<p><strong>assets/images/hexastart.jpg</strong></p>
-<img src="assets/images/hexastart.jpg" class="img-fluid rounded" alt="HexaStart">
-</div>
+<div class="card p-3">
+<h2 class="text-center">Configuration HexaStart</h2>
+<img src="assets/images/hexastart.jpg" class="img-fluid rounded" alt="Configuration HexaStart">
 </div>
 </div>
 
 <div class="col-lg-6">
-<div class="card shadow h-100">
-
-<div class="card-header bg-primary text-white">
-<h2 class="mb-0">Prix TTC : 1 100 €</h2>
-</div>
-
+<div class="card">
+<div class="price">1 100 € TTC</div>
 <div class="card-body">
-
-<table class="table table-striped align-middle">
-<tr><th>Processeur</th><td>AMD Ryzen 5 5600</td></tr>
-<tr><th>Ventirad</th><td>Thermalright Assassin SE 120</td></tr>
-<tr><th>Carte mère</th><td>MSI MPG B550</td></tr>
-<tr><th>Mémoire</th><td>Patriot Viper DDR4 3200 MHz</td></tr>
-<tr><th>Carte graphique</th><td>ASUS Dual Radeon RX 7600 8 Go</td></tr>
-<tr><th>Stockage</th><td>Crucial NVMe SSD 1 To</td></tr>
-<tr><th>Alimentation</th><td>be quiet! System Power 11 - 650 W</td></tr>
-<tr><th>Boîtier</th><td>Corsair 4000D</td></tr>
-<tr><th>Système</th><td>Windows 11 installé et configuré</td></tr>
+<table class="table">
+<tr><td>Processeur</td><td>AMD Ryzen 5 5600</td></tr>
+<tr><td>Carte mère</td><td>MSI MPG B550</td></tr>
+<tr><td>Ventirad</td><td>Thermalright Assassin SE 120</td></tr>
+<tr><td>Mémoire</td><td>Patriot Viper DDR4 3200</td></tr>
+<tr><td>Carte graphique</td><td>ASUS Dual RX 7600 8 Go</td></tr>
+<tr><td>SSD</td><td>Crucial NVMe 1 To</td></tr>
+<tr><td>Alimentation</td><td>be quiet! System Power 11 650 W</td></tr>
+<tr><td>Boîtier</td><td>Corsair 4000D</td></tr>
+<tr><td>Système</td><td>Windows 11 installé</td></tr>
 </table>
 
-<div class="d-grid gap-2">
-<a href="https://pay.sumup.com/b2c/QRO8EBOA" target="_blank" class="btn btn-success btn-lg">
-Acheter maintenant - 1 100 €
-</a>
-<a href="contact.html" class="btn btn-outline-primary">
-Demander un devis
-</a>
-</div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="card shadow mt-5">
-<div class="card-body">
-
-<h2>Services inclus</h2>
-
-<ul>
-<li>✔ Assemblage professionnel.</li>
-<li>✔ Câble management soigné.</li>
-<li>✔ Tests de stabilité avant livraison.</li>
-<li>✔ Windows 11 installé et optimisé.</li>
-<li>✔ Configuration évolutive.</li>
-<li>✔ Excellent rapport qualité / prix.</li>
-</ul>
-
-<hr>
-
-<h2>Garantie</h2>
-
 <div class="alert alert-success">
-<strong>Garantie HexaTech : 2 ans.</strong><br>
-Les composants bénéficient également de la garantie constructeur.
+<strong>✔ Garantie HexaTech : 2 ans</strong><br>
+Garantie constructeur sur les composants.<br>
+Les composants peuvent être remplacés par un modèle équivalent en cas de rupture de stock.<br>
+Livraison non incluse – Retrait sur place possible.
 </div>
 
-<div class="alert alert-warning">
-<ul class="mb-0">
-<li>Les composants peuvent être remplacés par des modèles équivalents ou supérieurs en cas de rupture de stock.</li>
-<li>Les photos sont non contractuelles.</li>
-<li>Les frais de livraison ne sont pas inclus.</li>
-<li>Retrait sur place possible sur rendez-vous.</li>
-</ul>
+<div class="d-grid gap-2">
+<a class="btn btn-success btn-lg" href="https://pay.sumup.com/b2c/QRO8EBOA" target="_blank"><i class="bi bi-cart-fill"></i> Acheter maintenant</a>
+<a class="btn btn-warning btn-lg" href="https://wa.me/33625370973?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20configuration%20HexaStart." target="_blank"><i class="bi bi-whatsapp"></i> Poser une question</a>
+<a class="btn btn-outline-primary" href="contact.html">Demander un devis</a>
+</div>
+
+</div>
+</div>
 </div>
 
 </div>
 </div>
 
-</main>
+<a class="float" href="https://wa.me/33625370973" target="_blank"><i class="bi bi-whatsapp"></i></a>
 
-<footer class="bg-dark text-white text-center py-4 mt-5">
-© 2026 HexaTech - Tous droits réservés.
+<footer class="text-center py-4">
+<strong>HexaTech</strong><br>
+© 2026 HexaTech
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
-
 </body>
 </html>

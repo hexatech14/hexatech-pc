@@ -3,24 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HexaTech - Accueil</title>
+<title>HexaTech - Réparation informatique à Montauban</title>
+<meta name="description" content="HexaTech : réparation informatique, montage PC sur mesure et PC reconditionnés à Montauban.">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1KF707SVWW"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-1KF707SVWW');
+</script>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+body{margin:0;background:#eef3f8;font-family:Segoe UI,Arial,sans-serif}
+.navbar{background:#08111f!important;padding:15px 0;box-shadow:0 4px 15px rgba(0,0,0,.35)}
+.navbar-brand,.navbar-brand strong{color:#FFC107!important;font-weight:800}
+.navbar-nav .nav-link{color:#FFC107!important;font-weight:700;margin-left:15px}
+.navbar-nav .nav-link:hover{color:#fff!important}
+.navbar-nav .nav-link.active{border-bottom:3px solid #FFC107}
+.hero{background:linear-gradient(135deg,#08111f,#0b3d91);color:#fff;padding:90px 0;text-align:center}
+.card{border:none;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.15);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;width:65px;height:65px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;text-decoration:none;box-shadow:0 8px 25px rgba(0,0,0,.35);z-index:9999}
+footer{background:#08111f;color:#fff}
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container">
 <a class="navbar-brand d-flex align-items-center" href="index.html">
-<img src="assets/images/logohexatech.png" alt="HexaTech" height="70" class="me-2">
+<img src="assets/images/logohexatech.png" height="70" class="me-2" alt="HexaTech">
 <strong>HexaTech</strong>
 </a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -33,75 +54,35 @@
 </div>
 </nav>
 
-<header class="bg-dark text-white py-5">
-<div class="container text-center">
-<img src="assets/images/logohexatech.png" class="img-fluid mb-4" style="max-height:220px" alt="Logo HexaTech">
-<h1 class="display-4">HexaTech</h1>
-<p class="lead">Réparation informatique • Montage PC sur mesure • Vente de PC reconditionnés</p>
-<a href="contact.html" class="btn btn-primary btn-lg mt-3">Nous contacter</a>
+<section class="hero">
+<div class="container">
+<img src="assets/images/logohexatech.png" style="max-height:220px" alt="Logo">
+<h1 class="display-3 fw-bold mt-3">HexaTech</h1>
+<p class="lead">Votre spécialiste informatique à Montauban</p>
+<p>Réparation informatique • Montage PC • PC reconditionnés</p>
+<div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+<a class="btn btn-warning btn-lg" href="tel:+33625370973"><i class="bi bi-telephone-fill"></i> Appeler</a>
+<a class="btn btn-success btn-lg" target="_blank" href="https://wa.me/33625370973?text=Bonjour,%20je%20vous%20contacte%20via%20le%20site%20HexaTech."><i class="bi bi-whatsapp"></i> WhatsApp</a>
+<a class="btn btn-primary btn-lg" href="contact.html"><i class="bi bi-envelope-fill"></i> Contact</a>
 </div>
-</header>
+</div>
+</section>
 
-<section class="container py-5">
+<div class="container py-5">
 <div class="row g-4">
-<div class="col-md-4">
-<div class="card h-100 shadow">
-<div class="card-body text-center">
-<h3>Réparation informatique</h3>
-<p>Diagnostic, dépannage, nettoyage et optimisation de vos ordinateurs.</p>
-</div>
+<div class="col-md-4"><div class="card h-100"><div class="card-body text-center"><h3>Réparation</h3><p>Dépannage et optimisation de votre ordinateur.</p></div></div></div>
+<div class="col-md-4"><div class="card h-100"><div class="card-body text-center"><h3>Montage PC</h3><p>Configurations sur mesure avec garantie.</p><a href="montagepc.html" class="btn btn-primary">Découvrir</a></div></div></div>
+<div class="col-md-4"><div class="card h-100"><div class="card-body text-center"><h3>PC reconditionnés</h3><p>Contrôlés, nettoyés et garantis 1 an.</p></div></div></div>
 </div>
 </div>
 
-<div class="col-md-4">
-<div class="card h-100 shadow">
-<div class="card-body text-center">
-<h3>Montage PC</h3>
-<p>Assemblage de PC sur mesure selon vos besoins et votre budget.</p>
-<a href="montagepc.html" class="btn btn-outline-primary">Découvrir</a>
-</div>
-</div>
-</div>
+<a class="whatsapp-float" href="https://wa.me/33625370973" target="_blank"><i class="bi bi-whatsapp"></i></a>
 
-<div class="col-md-4">
-<div class="card h-100 shadow">
-<div class="card-body text-center">
-<h3>PC reconditionnés</h3>
-<p>Des ordinateurs contrôlés, testés et prêts à l'emploi.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="bg-light py-5">
-<div class="container text-center">
-<h2>⭐⭐⭐⭐⭐ Avis Google</h2>
-<p class="lead">Votre satisfaction est notre priorité. Votre avis aide HexaTech à gagner en visibilité.</p>
-
-<div class="d-grid gap-3 col-md-6 mx-auto">
-<a href="https://g.page/r/CYnENzm3Fga3EAE/review" target="_blank" class="btn btn-success btn-lg">
-⭐ Rédiger un avis Google
-</a>
-
-<a href="https://wa.me/33625370973?text=Bonjour,%20je%20vous%20contacte%20via%20le%20site%20HexaTech%20pour%20obtenir%20des%20renseignements." target="_blank" class="btn btn-success btn-lg">
-💬 Contacter sur WhatsApp
-</a>
-
-<a href="contact.html" class="btn btn-primary btn-lg">
-📧 Nous contacter
-</a>
-</div>
-
-</div>
-</section>
-
-<footer class="bg-dark text-white text-center py-4">
-<p class="mb-1"><strong>HexaTech</strong></p>
-<p class="mb-0">Réparation informatique • Montage PC • PC reconditionnés</p>
+<footer class="text-center py-4">
+<p><strong>HexaTech</strong></p>
+<p>© 2026 HexaTech - Tous droits réservés.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
 </body>
 </html>

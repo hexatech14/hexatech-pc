@@ -1,43 +1,96 @@
-/* HexaTech V4 */
+/* HexaTech - style.css */
+
 :root{
- --primary:#062b63;
- --secondary:#ffc107;
+  --primary:#0d6efd;
+  --dark:#212529;
+  --light:#f8f9fa;
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
- font-family:Arial,Helvetica,sans-serif;
- background:#f8f9fa;
- color:#212529;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f6f9;
+  color:#222;
 }
-.hero{
- background:linear-gradient(135deg,#062b63,#0b5ed7);
- color:#fff;
- padding:90px 0;
+
+.navbar{
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
+
 .navbar-brand img{
- height:56px;
+  transition:transform .3s;
 }
+
+.navbar-brand img:hover{
+  transform:scale(1.08);
+}
+
+header{
+  background:linear-gradient(135deg,#0d6efd,#0a58ca);
+}
+
 .card{
- border:none;
- border-radius:16px;
- box-shadow:0 8px 20px rgba(0,0,0,.08);
- transition:.25s;
+  border:none;
+  border-radius:16px;
+  transition:.3s;
 }
+
 .card:hover{
- transform:translateY(-6px);
- box-shadow:0 12px 28px rgba(0,0,0,.15);
+  transform:translateY(-6px);
+  box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
-.btn-warning{
- font-weight:bold;
+
+.btn{
+  border-radius:10px;
+  transition:.25s;
 }
-section{
- padding:70px 0;
+
+.btn:hover{
+  transform:translateY(-2px);
 }
+
+.table{
+  background:#fff;
+}
+
 footer{
- background:#062b63;
- color:#fff;
- padding:25px 0;
- margin-top:40px;
+  margin-top:50px;
 }
-h1,h2,h3{
- font-weight:700;
+
+img{
+  max-width:100%;
+}
+
+.shadow{
+  box-shadow:0 10px 25px rgba(0,0,0,.12)!important;
+}
+
+.alert{
+  border-radius:12px;
+}
+
+.form-control,
+textarea{
+  border-radius:10px;
+}
+
+.form-control:focus{
+  box-shadow:0 0 0 .2rem rgba(13,110,253,.2);
+}
+
+@media (max-width:768px){
+  .navbar-brand img{
+    height:60px !important;
+  }
+
+  header{
+    padding:3rem 0 !important;
+  }
+
+  h1{
+    font-size:2rem;
+  }
 }
