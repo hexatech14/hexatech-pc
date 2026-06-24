@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hexatech14.github.io/hexatech-pc/sitemap.xml
