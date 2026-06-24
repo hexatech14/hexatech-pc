@@ -1,15 +1,43 @@
+/* HexaTech V4 */
+:root{
+ --primary:#062b63;
+ --secondary:#ffc107;
+}
 body{
-    background:#0f172a;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-    padding-top:100px;
+ font-family:Arial,Helvetica,sans-serif;
+ background:#f8f9fa;
+ color:#212529;
 }
-
-h1{
-    font-size:60px;
+.hero{
+ background:linear-gradient(135deg,#062b63,#0b5ed7);
+ color:#fff;
+ padding:90px 0;
 }
-
-p{
-    font-size:25px;
+.navbar-brand img{
+ height:56px;
+}
+.card{
+ border:none;
+ border-radius:16px;
+ box-shadow:0 8px 20px rgba(0,0,0,.08);
+ transition:.25s;
+}
+.card:hover{
+ transform:translateY(-6px);
+ box-shadow:0 12px 28px rgba(0,0,0,.15);
+}
+.btn-warning{
+ font-weight:bold;
+}
+section{
+ padding:70px 0;
+}
+footer{
+ background:#062b63;
+ color:#fff;
+ padding:25px 0;
+ margin-top:40px;
+}
+h1,h2,h3{
+ font-weight:700;
 }
