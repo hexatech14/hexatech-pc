@@ -1,32 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://hexatech14.github.io/hexatech-pc/</loc>
-</url>
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://hexatech14.github.io/hexatech-pc/index.html</loc>
-</url>
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/index.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://hexatech14.github.io/hexatech-pc/services.html</loc>
-</url>
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/services.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://hexatech14.github.io/hexatech-pc/montagepc.html</loc>
-</url>
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/configuration.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://hexatech14.github.io/hexatech-pc/reconditionnes.html</loc>
-</url>
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/reconditionnes.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://hexatech14.github.io/hexatech-pc/tarifs.html</loc>
-</url>
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/realisations.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://hexatech14.github.io/hexatech-pc/contact.html</loc>
-</url>
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/tarifs.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/contact.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/commande.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/hexastart.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/hexabasic.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/apropos.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/cgv.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/confidentialite.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://hexatech14.github.io/hexatech-pc/mentions-legales.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
 </urlset>
