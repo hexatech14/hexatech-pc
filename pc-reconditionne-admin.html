@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Reconditionnés - Administration | HexaTech</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{background:#f4f6f9}
+.container-admin{max-width:1350px;margin:40px auto}
+</style>
+</head>
+<body>
+
+<div id="menu"></div>
+
+<div class="container container-admin">
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+<h1>♻️ PC reconditionnés - Administration</h1>
+<a href="dashboard-admin.html" class="btn btn-outline-secondary">← Dashboard</a>
+</div>
+
+<div class="card shadow-sm mb-4">
+<div class="card-body">
+<div class="row g-3">
+<div class="col-md-4">
+<input class="form-control" placeholder="Rechercher un PC...">
+</div>
+<div class="col-md-3">
+<select class="form-select">
+<option>Tous les statuts</option>
+<option>Disponible</option>
+<option>Réservé</option>
+<option>Vendu</option>
+<option>En préparation</option>
+</select>
+</div>
+<div class="col-md-5 text-end">
+<button class="btn btn-success" disabled>+ Ajouter un PC</button>
+<button class="btn btn-primary" disabled>Importer</button>
+<button class="btn btn-warning" disabled>Exporter</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card shadow-sm">
+<div class="card-header fw-bold">Inventaire</div>
+<div class="card-body">
+<table class="table table-hover align-middle">
+<thead>
+<tr>
+<th>ID</th>
+<th>Photo</th>
+<th>Modèle</th>
+<th>CPU</th>
+<th>RAM</th>
+<th>SSD</th>
+<th>Prix</th>
+<th>Garantie</th>
+<th>Statut</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R001</td>
+<td>💻</td>
+<td>Dell Latitude 7420</td>
+<td>Intel Core i7‑1185G7</td>
+<td>16 Go</td>
+<td>256 Go NVMe</td>
+<td>499 €</td>
+<td>1 an</td>
+<td><span class="badge bg-success">Disponible</span></td>
+<td>
+<button class="btn btn-sm btn-primary" disabled>Modifier</button>
+<button class="btn btn-sm btn-secondary" disabled>Publier</button>
+<button class="btn btn-sm btn-danger" disabled>Supprimer</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-md-3"><div class="card text-center"><div class="card-body"><h6>Disponibles</h6><h3>1</h3></div></div></div>
+<div class="col-md-3"><div class="card text-center"><div class="card-body"><h6>Réservés</h6><h3>0</h3></div></div></div>
+<div class="col-md-3"><div class="card text-center"><div class="card-body"><h6>Vendus</h6><h3>0</h3></div></div></div>
+<div class="col-md-3"><div class="card text-center"><div class="card-body"><h6>Total</h6><h3>1</h3></div></div></div>
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+<script src="config.js"></script>
+<script src="menu.js"></script>
+<script src="footer.js"></script>
+<script src="animations.js"></script>
+
+</body>
+</html>

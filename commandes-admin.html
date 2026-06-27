@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commandes | Administration HexaTech</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.container-admin{max-width:1400px;margin:40px auto;}
+</style>
+</head>
+<body>
+
+<div id="menu"></div>
+
+<div class="container container-admin">
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+<h1>📦 Gestion des commandes</h1>
+<a href="dashboard.html" class="btn btn-outline-secondary">← Dashboard</a>
+</div>
+
+<div class="card shadow-sm mb-4">
+<div class="card-body">
+<div class="row g-3">
+<div class="col-md-3">
+<input class="form-control" placeholder="Rechercher une commande...">
+</div>
+
+<div class="col-md-3">
+<select class="form-select">
+<option>Tous les statuts</option>
+<option>En attente</option>
+<option>Payée</option>
+<option>Préparation</option>
+<option>Expédiée</option>
+<option>Livrée</option>
+<option>Annulée</option>
+</select>
+</div>
+
+<div class="col-md-3">
+<input type="date" class="form-control">
+</div>
+
+<div class="col-md-3 text-end">
+<button class="btn btn-success" disabled>Nouvelle commande</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="card shadow-sm">
+<div class="card-header fw-bold">Liste des commandes</div>
+
+<div class="card-body">
+
+<table class="table table-hover align-middle">
+<thead>
+<tr>
+<th>N°</th>
+<th>Client</th>
+<th>Produit</th>
+<th>Montant</th>
+<th>Paiement</th>
+<th>Livraison</th>
+<th>Statut</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>#000001</td>
+<td>Aucun client</td>
+<td>HexaStart</td>
+<td>1 250,00 €</td>
+<td><span class="badge bg-warning text-dark">En attente</span></td>
+<td>Non expédiée</td>
+<td><span class="badge bg-secondary">Préparation</span></td>
+<td>
+<button class="btn btn-sm btn-primary" disabled>Voir</button>
+<button class="btn btn-sm btn-success" disabled>Valider</button>
+<button class="btn btn-sm btn-danger" disabled>Annuler</button>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+</div>
+
+<div class="row mt-4">
+
+<div class="col-md-2"><div class="card text-center"><div class="card-body"><h6>En attente</h6><h2>0</h2></div></div></div>
+<div class="col-md-2"><div class="card text-center"><div class="card-body"><h6>Payées</h6><h2>0</h2></div></div></div>
+<div class="col-md-2"><div class="card text-center"><div class="card-body"><h6>Préparation</h6><h2>0</h2></div></div></div>
+<div class="col-md-2"><div class="card text-center"><div class="card-body"><h6>Expédiées</h6><h2>0</h2></div></div></div>
+<div class="col-md-2"><div class="card text-center"><div class="card-body"><h6>Livrées</h6><h2>0</h2></div></div></div>
+<div class="col-md-2"><div class="card text-center"><div class="card-body"><h6>CA</h6><h2>0 €</h2></div></div></div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+<script src="config.js"></script>
+<script src="menu.js"></script>
+<script src="footer.js"></script>
+<script src="animations.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administration | HexaTech</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+body{background:#f4f6f9;}
+.dashboard{max-width:1200px;margin:40px auto;}
+.card{transition:.2s}
+.card:hover{transform:translateY(-4px)}
+.card a{text-decoration:none;color:inherit}
+.badge-admin{background:#0d6efd}
+</style>
+</head>
+<body>
+
+<div id="menu"></div>
+
+<div class="container dashboard">
+
+<div class="text-center mb-5">
+<span class="badge badge-admin p-2">ADMINISTRATION HEXATECH</span>
+<h1 class="mt-3">Tableau de bord</h1>
+<p>Interface d'administration (préparation)</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>📦 Commandes</h3>
+<p>Voir, modifier et suivre les commandes.</p>
+<a href="mes-commandes.html" class="btn btn-warning">Ouvrir</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>💻 Configurations</h3>
+<p>Gérer les PC HexaTech.</p>
+<a href="configuration.html" class="btn btn-warning">Ouvrir</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>♻️ PC reconditionnés</h3>
+<p>Ajouter ou modifier un PC.</p>
+<a href="#" class="btn btn-warning disabled">Bientôt</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>👥 Clients</h3>
+<p>Liste des comptes clients.</p>
+<a href="#" class="btn btn-warning disabled">Bientôt</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>🚚 Livraisons</h3>
+<p>Suivi des expéditions.</p>
+<a href="livraison.html" class="btn btn-warning">Ouvrir</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>⭐ Avis clients</h3>
+<p>Gérer les avis.</p>
+<a href="#" class="btn btn-warning disabled">Bientôt</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>⚙️ Paramètres</h3>
+<p>Entreprise, coordonnées, configuration.</p>
+<a href="#" class="btn btn-warning disabled">Bientôt</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>📊 Statistiques</h3>
+<p>Commandes, ventes et trafic.</p>
+<a href="#" class="btn btn-warning disabled">Bientôt</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 p-4">
+<h3>🚪 Déconnexion</h3>
+<p>Quitter l'administration.</p>
+<a href="index.html" class="btn btn-outline-danger">Déconnexion</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+<script src="config.js"></script>
+<script src="menu.js"></script>
+<script src="footer.js"></script>
+<script src="animations.js"></script>
+
+</body>
+</html>
